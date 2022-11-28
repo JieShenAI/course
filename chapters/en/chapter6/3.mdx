@@ -189,7 +189,7 @@ token_classifier("My name is Sylvain and I work at Hugging Face in Brooklyn.")
 
 The `aggregation_strategy` picked will change the scores computed for each grouped entity. With `"simple"` the score is just the mean of the scores of each token in the given entity: for instance, the score of "Sylvain" is the mean of the scores we saw in the previous example for the tokens `S`, `##yl`, `##va`, and `##in`. Other strategies available are:
 
-- `"first"`, where the score of each entity is the score of the first token of that entity (so for "Sylvain" it would be 0.993828, the score of the token `S`)
+- `"first"`, where the score of each entity is the score of the first token of that entity (so for "Sylvain" it would be 0.9993828, the score of the token `S`)
 - `"max"`, where the score of each entity is the maximum score of the tokens in that entity (so for "Hugging Face" it would be 0.98879766, the score of "Face")
 - `"average"`, where the score of each entity is the average of the scores of the words composing that entity (so for "Sylvain" there would be no difference from the `"simple"` strategy, but "Hugging Face" would have a score of 0.9819, the average of the scores for "Hugging", 0.975, and "Face", 0.98879)
 
