@@ -1,4 +1,6 @@
-# 如果我的数据集不在 Hub 上怎么办？
+from datasets import load_dataset
+
+squad_it_dataset = load_dataset("json", data_files="SQuAD_it-train.json", field="data")# 如果我的数据集不在 Hub 上怎么办？
 
 <CourseFloatingBanner chapter={5}
   classNames="absolute z-10 right-0 top-0"
@@ -50,7 +52,7 @@ SQuAD_it-train.json.gz:	   82.2% -- replaced with SQuAD_it-train.json
 
 <Tip>
 
-✎ 如果你想知道为什么上面的shell命令中哟与一个字符`!`,那是因为我们是在 Jupyter notebook 中运行它们。如果您想在终端中下载和解压缩数据集，只需删除前缀!即可。
+✎ 如果你想知道为什么上面的shell命令中有一个字符`!`,那是因为我们是在 Jupyter notebook 中运行它们。如果您想在终端中下载和解压缩数据集，只需删除前缀!即可。
 
 </Tip>
 
